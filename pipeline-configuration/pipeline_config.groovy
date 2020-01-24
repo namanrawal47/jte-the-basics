@@ -1,7 +1,5 @@
 libraries{
-    maven
     sonarqube
-    gradle
 }
 stages{
     continuous_integration{
