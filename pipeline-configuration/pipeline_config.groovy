@@ -5,7 +5,7 @@ libraries{
 }
 
 stages{
-    continous_integration{
+    continuous_integration{
         build
         static_code_analysis
     }
