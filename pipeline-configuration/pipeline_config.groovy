@@ -1,6 +1,7 @@
 libraries{
     sonarqube
     ansible
+    splunk
 }
 stages{
     continuous_integration{
