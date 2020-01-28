@@ -1,7 +1,9 @@
 libraries{
     sonarqube
     ansible
-    splunk
+    splunk{
+		afterSteps = [ "static_code_analysis", "unit_test" ]
+    }
 }
 stages{
     continuous_integration{
