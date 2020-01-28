@@ -4,6 +4,7 @@ libraries{
 }
 stages{
     continuous_integration{
+        unit_test
         build
         static_code_analysis
     }
@@ -21,4 +22,12 @@ application_environments{
 
 keywords{
     requiresApproval = true
+}
+
+steps{
+	unit_test{
+		stage = "Unit Test"
+		image = "maven"
+		command = "mvn -v"
+	}
 }
