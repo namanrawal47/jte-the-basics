@@ -4,6 +4,7 @@ libraries{
     splunk{
         afterSteps = ["static_code_analysis","unit_test"]
     }
+    git
 }
 stages{
     continuous_integration{
